@@ -10,3 +10,9 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
+nav ul li {
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
