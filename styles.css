@@ -26,6 +26,7 @@ nav ul li {
   margin: 5px 30px;
   font-size: 20px;
 }
+
 /* Phone Section */
 .phone-col-1 img {
   flex-basis: 30%;
@@ -70,4 +71,27 @@ nav ul li {
   width: 500px;
   height: auto;
   padding: 30px;
+}
+
+/* Watch Section */
+.watch-col-1 img {
+  flex-basis: 30%;
+  width: 500px;
+  height: auto;
+  padding: 30px;
+}
+
+.watch-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 70px;
+  padding: 30px 15px;
+  border: 1px solid #b5b4b4;
+  border-radius: 25px;
+}
+
+.watch-col-2 {
+  flex-basis: 60%;
+  text-align: center;
 }
