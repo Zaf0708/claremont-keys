@@ -5,12 +5,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#header {
-  background-image: url(images/key-wallpaper.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 600px;
-}
+/* Carousel */
+
+
+
+
 
 nav {
   background-color: #ffffff;
