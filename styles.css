@@ -141,3 +141,22 @@ nav ul li {
   flex-basis: 60%;
   text-align: center;
 }
+
+/* Gift Section */
+.footer {
+  background-color: #232323;
+  padding: 25px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer ul li {
+  padding: 5px 10px;
+  font-weight: bold;
+  color: rgb(255, 254, 254);
+}
