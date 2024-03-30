@@ -8,6 +8,68 @@
 /* Carousel */
 .carousel {
   position: relative;
+  max-width: 600px; /* Adjust as needed */
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#slide1:checked ~ .carousel-inner #slide1,
+#slide2:checked ~ .carousel-inner #slide2,
+#slide3:checked ~ .carousel-inner #slide3 {
+  opacity: 1;
+}
+
+label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#slide1:checked ~ label:nth-child(1),
+#slide2:checked ~ label:nth-child(2),
+#slide3:checked ~ label:nth-child(3) {
+  background-color: #666;
+}
+
+/* Autoplay CSS */
+#slide1:checked ~ #slide2,
+#slide2:checked ~ #slide3,
+#slide3:checked ~ #slide1 {
+  animation: carousel 5s infinite;
+}
+
+@keyframes carousel {
+  0%, 100% {
+      opacity: 1;
+  }
+  25%, 75% {
+      opacity: 0;
+  }
+}
+
+
+
+
+/* .carousel {
+  position: relative;
   width: 100%;
   height: 600px;
   overflow: hidden;
@@ -54,6 +116,9 @@
 .violet {
   background-color: violet;
 }
+*/
+
+
 
 /* Navigation items */
 nav {
